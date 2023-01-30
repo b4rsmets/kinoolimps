@@ -105,7 +105,7 @@ a{
     height: 30px;
 }
 .container-times{
-    width: 295px;
+    width: 350px;
     height: 55px;
     display: flex;
     margin-top: 20px;
@@ -123,7 +123,7 @@ a{
     flex-direction: column;
 }
 .block-time{
-    width: 96px;
+    width: 95px;
     text-align: center;
     height: 36px;
     display: flex;

@@ -39,7 +39,7 @@ require_once './functions/seans.php';
             <div class="tickets-film">
                
                 <div class="seans-container-film">
-                     <h1>Сеансы</h1>
+                     <h1>Сеансы 2D</h1>
                     <div class="container-card">
                     <?php
                     require_once ('./views/seans.php')

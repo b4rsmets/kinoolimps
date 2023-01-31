@@ -37,9 +37,11 @@ foreach ($films as $film)
         <div class="raspes-card">
             <h3>Сеансы 2D</h3>
             <div class="container-times">
+
                 <?php
                 require ('./views/seans.php')
                 ?>
+                
             </div>
         </div>
     </div>

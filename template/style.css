@@ -108,7 +108,8 @@ a{
     width: 350px;
     height: 55px;
     display: flex;
-    margin-top: 20px;
+    margin-top: 45px;
+    /* display: none; */
     flex-wrap: nowrap;
 }
 .afisha{
@@ -134,6 +135,7 @@ a{
     justify-content: space-around;
     background: #5C2583;
     color: white;
+    cursor: pointer;
 }
 .slider{
     width: 100%;
@@ -391,4 +393,41 @@ a{
 .container-news h1{
     color: white;
     margin-bottom: 30px;
+}
+.block-time {
+    position: relative;
+}
+
+.block-time .price-seans {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 118%;
+    font-size: 15px;
+    left: 70%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.block-time .price-seans::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.block-time:hover .price-seans {
+    visibility: visible;
+    opacity: 1;
 }

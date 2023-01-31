@@ -11,10 +11,11 @@ foreach ($seanses as $one_seans){
     if($one_seans['movie_id']==$id_film)://если ид фильма в массиве сеансов сопадает с ид фильма, время выводим
         $emply=false
         ?>
-
-        <div class="block-time">
-            <h2><?= date("G:i", strtotime($one_seans['time_movie']));?>
-        </div>
+                
+            <div class="block-time">
+                <h2><?= date("G:i", strtotime($one_seans['time_movie']));?>
+               <span class="price-seans"><?=$one_seans['price']?> ₽</span>
+            </div>
     <?php
     endif;
 }

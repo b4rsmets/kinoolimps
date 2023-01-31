@@ -18,7 +18,7 @@ if(is_array($sliders))
 foreach ($sliders as $slide)
 {
 ?>
-<img src="/resource/uploads/posters/<?=$slide['slider_image']?>" alt="Slide 1">
+<img src="/resource/uploads/posters/<?=$slide['slider_image']?>" alt="Slide">
 
 
 <?php

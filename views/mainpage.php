@@ -10,11 +10,23 @@ if($query->num_rows) {
 }
 //выбираем все сеансы в массив seans
 require_once './functions/seans.php';
+require_once './functions/slider.php';
 ?>
-<div class="slider">
-    
-</div>
+<div id="slider">
+<?php
+if(is_array($sliders))
+foreach ($sliders as $slide)
+{
+?>
+<img src="/resource/uploads/posters/<?=$slide['slider_image']?>" alt="Slide 1">
 
+
+<?php
+}
+?>
+<div id="slide-indicators">
+</div>
+</div>
 <div class="container-catalog">
 <?php
 if(is_array($films))

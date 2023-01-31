@@ -16,6 +16,8 @@ a{
 #header{
     width: 100%;
     height: 100%;
+    /* filter: brightness(100%); */
+    z-index: 999;
 }
 .logo{
     width: 165px;
@@ -24,6 +26,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    /* color: #282828; */
     line-height: 38px;
     align-items: center;
     margin-left: 50px;
@@ -31,18 +34,20 @@ a{
 }
 .logo .kinoteatr{
     font-size: 52px;
+    color: #282828;
     font-weight: bolder;
 }
 .logo .olimp{
     font-size: 35px;
     letter-spacing: 8px;
+    color: #282828;
 }
 .container-menu{
     width: 84%;
     min-width: 1180px;
     height: 150px;
     margin: auto;
-    border-bottom: 1px solid rgb(161 33 33 / 15%);
+    border-bottom: 1px solid rgb(100 20 40 / 48%);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -64,13 +69,14 @@ a{
     width: 262px;
     font-weight: 500;
     font-size: 21px;
-    color: black;
+    color: #282828;
     margin-right: 42px;
 }
 .container-catalog{
     width: 71%;
     margin: auto;
     display: flex;
+    margin-top: 181px;
     height: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -467,3 +473,54 @@ a{
   .unoccupied {
     background-color: green;
   }
+  #slider {
+    width: 100%;
+    height: 696px;
+    /* position: absolute; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* bottom: 187px; */
+    z-index: -999;
+    align-items: flex-end;
+    }
+    #slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    filter: brightness(40%);
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    #slider img.active {
+    opacity: 1;
+    filter: brightness(40%);
+    }
+    #slide-indicators {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    position: relative;
+    margin: auto;
+    /* width: 100%; */
+    bottom: 39px;
+    position: relative;
+    top: 316px;
+    flex-direction: row;
+    align-items: flex-end;
+    }
+    .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    }
+    .indicator.active {
+    background-color: gray;
+    }
+    .login>span{
+        color: #282828;
+    }

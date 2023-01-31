@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 30, 2023 at 03:58 PM
+-- Generation Time: Jan 31, 2023 at 05:43 PM
 -- Server version: 8.0.24
 -- PHP Version: 7.4.21
 
@@ -110,8 +110,10 @@ CREATE TABLE `seans` (
 
 INSERT INTO `seans` (`id`, `hall_id`, `date_movie`, `time_movie`, `movie_id`, `price`) VALUES
 (1, 1, '2023-01-30', '18:00:00.000000', 1, 400),
-(2, 1, '2023-01-30', '22:00:00.000000', 1, 400),
-(3, 2, '2023-01-30', '14:00:00.000000', 2, 300);
+(2, 1, '2023-01-30', '22:00:00.000000', 1, 4013),
+(3, 2, '2023-01-30', '14:00:00.000000', 2, 300),
+(4, 1, '2023-01-30', '14:00:19.000000', 1, 400),
+(5, 1, '2023-01-30', '19:00:00.000000', 2, 401);
 
 -- --------------------------------------------------------
 
@@ -126,6 +128,27 @@ CREATE TABLE `seats` (
   `place` int NOT NULL,
   `booking` json NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `settings`
+--
+
+CREATE TABLE `settings` (
+  `id` int NOT NULL,
+  `slider_image` varchar(255) NOT NULL,
+  `title_movie_slider` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `settings`
+--
+
+INSERT INTO `settings` (`id`, `slider_image`, `title_movie_slider`) VALUES
+(1, 'avatar.jpg', ''),
+(2, 'cheburashka.jpg', 'Чебурашка'),
+(3, 'avatar.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -196,6 +219,12 @@ ALTER TABLE `seats`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `settings`
+--
+ALTER TABLE `settings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `soon`
 --
 ALTER TABLE `soon`
@@ -239,13 +268,19 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `seans`
 --
 ALTER TABLE `seans`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `seats`
 --
 ALTER TABLE `seats`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `settings`
+--
+ALTER TABLE `settings`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `soon`

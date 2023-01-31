@@ -21,12 +21,13 @@ if(is_array($films))
 foreach ($films as $film)
 {
 ?>
+
     <div data-aos="zoom-in" class="card">
             <div class="image-card">
                 <img src="./resource/uploads/afisha/<?=$film['movie_image']?>" alt="">
              </div>
              <div class="information">
-             <a href="/film?id=<?=$film['id']?>"><div class="title-card">
+             <a href="film/<?= $film['movie_url']; ?>"><div class="title-card">
             <h2><?=$film['movie_title'];?></h2>
         </div>
         </a>

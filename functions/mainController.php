@@ -14,5 +14,8 @@ class mainController
         if($_GET['route']=='soon'){
             require_once "./views/soon-cinema.php";
         }
+        if($_GET['route']=='booking'){
+            require_once "./views/booking.php";
+        }
     }
 }

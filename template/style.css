@@ -268,6 +268,8 @@ a{
 }
 .container-card{
     display: flex;
+    margin-top: 50px;
+    height: 50px;
 }
 .card-soon{
     width: 237px;
@@ -408,18 +410,22 @@ a{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 118%;
+    bottom: 125%;
+    display: flex;
     font-size: 15px;
-    left: 70%;
+    height: 34px;
+    left: 71%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .block-time .price-seans::after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -431,3 +437,33 @@ a{
     visibility: visible;
     opacity: 1;
 }
+.booking-container{
+    width: 100%;
+    height: 500px;
+}
+.brone{
+    width: 21%;
+    height: 400px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seat {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .occupied {
+    background-color: red;
+  }
+  
+  .unoccupied {
+    background-color: green;
+  }

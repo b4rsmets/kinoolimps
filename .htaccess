@@ -1,9 +1,10 @@
 AddType image/x-icon .ico 
 RewriteEngine on 
-
+Options +FollowSymLinks
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+RewriteRule ^useful/([a-z]*) /index.php?film=useful&article=$1
 AddDefaultCharset UTF-8
 php_flag magic_quotes_gpc Off

@@ -272,7 +272,7 @@ a{
 .seans-container-film{
     width: 600px;
     height: 100px;
-    margin-top: 205px;
+    margin-top: 197px;
     line-height: 100px;
 }
 .seans-card{
@@ -292,7 +292,7 @@ a{
 }
 .container-card{
     display: flex;
-    margin-top: 50px;
+    margin-top: 17px;
     height: 50px;
 }
 .card-soon{
@@ -543,4 +543,13 @@ a{
     }
     .login>span{
         color: #fff;
+    }
+    .empty{
+        font-size: 20px;
+        width: 284px;
+        font-weight: 600;
+        height: 50px;
+        position: relative;
+        bottom: 26px;
+        text-align: left;
     }

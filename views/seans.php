@@ -16,7 +16,9 @@ if (is_array($seanses)) {
         }
     }
     if ($emply) {
-        echo 'Нет проката';
+        echo '<div class="empty">';
+        echo '<span>Нет сеансов</span>';
+        echo '</div>';
     }
 }
 ?>

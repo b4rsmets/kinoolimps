@@ -1,21 +1,24 @@
 <?php
 namespace functions;
+
 class mainController
 {
-
-    public function getRoute(){
-        if($_GET['route']=='afisha'){
-            require_once "./views/mainpage.php";
-            $_SESSION['seans']['movie_id']=$_GET['id'];
-        }
-        if($_GET['route']=='film'){
-            require_once "./views/film.php";
-        }
-        if($_GET['route']=='soon'){
-            require_once "./views/soon-cinema.php";
-        }
-        if($_GET['route']=='booking'){
-            require_once "./views/booking.php";
+    public function getRoute()
+    {
+        switch ($_GET['route']) {
+            case 'afisha':
+                require_once "./views/mainpage.php";
+                $_SESSION['seans']['movie_id'] = $_GET['id'];
+                break;
+            case 'film':
+                require_once "./views/film.php";
+                break;
+            case 'soon':
+                require_once "./views/soon-cinema.php";
+                break;
+            case 'booking':
+                require_once "./views/booking.php";
+                break;
         }
     }
 }

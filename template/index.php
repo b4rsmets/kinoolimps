@@ -10,7 +10,7 @@
     <title>Кинотеатр</title>
 </head>
 <body>
-    
+
 
 <?php
 
@@ -28,6 +28,9 @@ $mainController->getRoute();
 require_once "footer.php";
 
 
+?>
+<?php
+require_once "./functions/delete.php";
 ?>
 <script type="text/javascript" src="../js/slider.js"></script>
 </body>

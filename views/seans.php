@@ -6,24 +6,24 @@ if(isset($film['id'])){
 elseif (isset($_GET['id'])){
     $id_film=$_GET['id'];
 }
+
+$selectedDate = isset($_GET['date']) ? $_GET['date'] : date('Y-m-d');
+
 if(is_array($seanses)){
     $emply=true;
     foreach ($seanses as $one_seans){
-        if($one_seans['movie_id']==$id_film && date("Y-m-d") == date("Y-m-d", strtotime($one_seans['date_movie'])) && date("G:i") < date("G:i", strtotime($one_seans['time_movie']))){
-            $emply=false
+        if($one_seans['movie_id']==$id_film && $one_seans['date_movie'] == $selectedDate && strtotime($one_seans['time_movie']) >= strtotime(date('Y-m-d H:i:s'))) {
+            $emply=false;
             ?>
-                    
-                <div class="block-time">
-                    <h2><?=date("G:i", strtotime($one_seans['time_movie']));?>
-                   <span class="price-seans"><?=$one_seans['price']?> ₽</span>
-                </div>
-        <?php
+            <div class="block-time">
+                <h2><?= date("G:i", strtotime($one_seans['time_movie']));?>
+                <span class="price-seans"><?=$one_seans['price']?> ₽</span>
+            </div>
+            <?php
         }
     }
     if ($emply) {
         echo 'Нет проката';
     }
-    }
-    
-
+}
 ?>

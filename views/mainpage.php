@@ -27,6 +27,9 @@ foreach ($sliders as $slide)
 <div id="slide-indicators">
 </div>
 </div>
+<div class="date-container">
+
+</div>
 <div class="container-catalog">
 <?php
 if(is_array($films))

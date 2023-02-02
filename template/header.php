@@ -1,8 +1,7 @@
 <header id="header">
     <div class="container-menu">
        <a href="afisha"><div class="logo">
-            <span class="kinoteatr">КИНО</span>
-            <span class="olimp">Олимп</span>
+            <img src="../resource/images/logo.svg" alt="">
         </a> 
          </div>
          <div class="menu">

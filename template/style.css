@@ -18,39 +18,52 @@ body::-webkit-scrollbar {
 *{
     margin: 0;
     padding: 0;
-    /* font-size: 40px; */
     box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background: #282828;
 }
 a{
     text-decoration: none;
     color:black;
 }
+#wrapper{
+    max-width: 1321px;
+    min-height: 100%;
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    z-index: 1;
+    position: relative;
+}
 #header{
     width: 100%;
     height: 100%;
-    background-color: rgba(42,42,42,.9);
-    /* filter: brightness(100%); */
+    /* display: flex; */
+    margin: auto;
+    background-color: #f5eeee;
     z-index: 999;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
 }
 .logo{
-    width: 165px;
+    width: 433px;
     height: 150px;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* color: #282828; */
+    flex-wrap: nowrap;
+    flex-direction: row;
     line-height: 38px;
     align-items: center;
     margin-left: 50px;
-    margin-right: 276px;
+    margin-right: 125px;
 }
 .logo .kinoteatr{
-    font-size: 52px;
+    font-size: 44px;
     color: #fff;
+    font-family: monospace;
     font-weight: bolder;
 }
 .logo .olimp{
@@ -58,19 +71,22 @@ a{
     letter-spacing: 8px;
     color: #fff;
 }
+.logo img{
+    width: 161px;
+    height: 120px;
+}
 .container-menu{
-    width: 84%;
-    min-width: 1180px;
+    width: 100%;
+    /* min-width: 1368px; */
     height: 150px;
     margin: auto;
-    /* border-bottom: 1px solid rgb(100 20 40 / 48%); */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 .menu{
-    width: 1022px;
+    width: 1021px;
     height: 101px;
     display: flex;
     flex-wrap: nowrap;
@@ -86,11 +102,10 @@ a{
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
-    color: #fff;
-    /* margin-right: -34px; */
+    color: #282828;
 }
 .container-catalog{
-    width: 71%;
+    width: 100%;
     margin: auto;
     display: flex;
     margin-top: 181px;
@@ -101,7 +116,7 @@ a{
 .card{
     width: 535px;
     height: 458px;
-    margin-left: 114px;
+    margin-left: 71px;
     display: flex;
 }
 .image-card{
@@ -132,7 +147,6 @@ a{
     height: 86px;
     display: flex;
     margin-top: 45px;
-    /* display: none; */
     flex-wrap: wrap;
 }
 .afisha{
@@ -198,7 +212,6 @@ a{
     height: 100%;
     display: flex;
     margin-bottom: 113px;
-    /* line-height: 24px; */
 }
 .information-film{
     width: 401px;
@@ -208,9 +221,9 @@ a{
     flex-wrap: nowrap;
     padding-bottom: 106px;
     line-height: 33px;
-    margin-left: 157px;
+    margin-left: 45px;
     margin-top: 50px;
-    margin-right: 62px;
+    margin-right: 51px;
 }
 .poster-film{
     width: 378px;
@@ -360,7 +373,7 @@ a{
     box-shadow: 0 4px 10px rgb(0 0 0 / 49%);
 }
 .login{
-    margin-left: 151px;
+    margin-left: 46px;
     display: flex;
     align-items: center;
     width: 286px;
@@ -388,14 +401,14 @@ a{
 }
 .news-card{
     width: 69%;
-    height: 777px;
+    height: 492px;
     display: flex;
     margin-right: 257px;
     margin-top: 50px;
 }
 .poster-news{
-    width: 728px;
-    height: 500px;
+    width: 556px;
+    height: 397px;
     margin-right: 50px;
 }
 .poster-news>img{
@@ -494,7 +507,7 @@ a{
   }
   #slider {
     width: 100%;
-    height: 746px;
+    height: 470px;
     /* position: absolute; */
     margin: auto;
     overflow: hidden;
@@ -527,7 +540,7 @@ a{
     /* width: 100%; */
     bottom: 28px;
     position: relative;
-    top: 316px;
+    top: 205px;
     flex-direction: row;
     align-items: flex-end;
     }
@@ -542,7 +555,7 @@ a{
     background-color: gray;
     }
     .login>span{
-        color: #fff;
+        color: #282828;
     }
     .empty{
         font-size: 20px;

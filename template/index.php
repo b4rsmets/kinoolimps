@@ -10,6 +10,8 @@
     <title>Кинотеатр</title>
 </head>
 <body>
+<div id="wrapper">
+
 
 
 <?php
@@ -29,6 +31,7 @@ require_once "footer.php";
 
 
 ?>
+</div>
 <script type="text/javascript" src="../js/slider.js"></script>
 </body>
 </html>

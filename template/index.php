@@ -29,9 +29,6 @@ require_once "footer.php";
 
 
 ?>
-<?php
-require_once "./functions/delete.php";
-?>
 <script type="text/javascript" src="../js/slider.js"></script>
 </body>
 </html>

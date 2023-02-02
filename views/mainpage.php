@@ -42,7 +42,8 @@ foreach ($films as $film)
                 <img src="./resource/uploads/afisha/<?=$film['movie_image']?>" alt="">
              </div>
              <div class="information">
-             <a href="film/<?= $film['movie_url']; ?>"><div class="title-card">
+             <a href="film?id=<?=$film['id']?>"><div class="title-card">
+                
             <h2><?=$film['movie_title'];?></h2>
         </div>
         </a>

@@ -29,6 +29,12 @@ foreach ($sliders as $slide)
 </div>
 <div class="date-container">
 
+<div class="date-selector">
+<button id="today">Today</button>
+<button id="tomorrow">Tomorrow</button>
+<button id="day_after_tomorrow">Day after tomorrow</button>
+</div>
+
 </div>
 <div class="container-catalog">
 <?php

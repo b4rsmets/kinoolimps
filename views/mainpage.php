@@ -29,9 +29,9 @@ foreach ($sliders as $slide)
 </div>
 <div class="date-container">
     <div class="choose-date">
-        <a href="afisha?date=<?=date('Y-m-d')?>">Сегодня</a>
-        <a href="afisha?date=<?= date ('Y-m-d',strtotime('+1 day'))?>">Завтра</a>
-        <a href="afisha?date=<?=date('Y-m-d',strtotime('+2 day'))?>">Выбрать дату</a>
+        <a href="afisha?date=<?=date('Y-m-d')?>"><?=date('F j')?></a>
+        <a href="afisha?date=<?= date ('Y-m-d',strtotime('+1 day'))?>"><?= date ('F j',strtotime('+1 day'))?></a>
+        <a href="afisha?date=<?=date('Y-m-d',strtotime('+2 day'))?>"><?= date ('F j',strtotime('+2 day'))?></a>
     </div>
 
 </div>

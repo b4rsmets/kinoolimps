@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Кинотеатр</title>
 </head>
@@ -33,6 +34,7 @@ require_once "footer.php";
 ?>
 </div>
 <script type="text/javascript" src="../js/slider.js"></script>
+<script type="text/javascript" src="../js/filter.js"></script>
 </body>
 </html>
 

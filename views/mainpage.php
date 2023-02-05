@@ -1,5 +1,5 @@
 <?php
-//вытаскиваем все фильмы
+
 use DBConnect as DBConnect;
 $connect= DBConnect::getInstance()->getConnect();
 $query=$connect->query('SELECT * FROM movies');
@@ -28,12 +28,11 @@ foreach ($sliders as $slide)
 </div>
 </div>
 <div class="date-container">
-
-<div class="date-selector">
-<button id="today">Today</button>
-<button id="tomorrow">Tomorrow</button>
-<button id="day_after_tomorrow">Day after tomorrow</button>
-</div>
+    <div class="choose-date">
+        <a href="afisha?date=<?=date('Y-m-d')?>">Сегодня</a>
+        <a href="afisha?date=<?= date ('Y-m-d',strtotime('+1 day'))?>">Завтра</a>
+        <a href="afisha?date=<?=date('Y-m-d',strtotime('+2 day'))?>">Выбрать дату</a>
+    </div>
 
 </div>
 <div class="container-catalog">
